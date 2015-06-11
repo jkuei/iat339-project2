@@ -1,11 +1,203 @@
-<!doctype html>
+<!DOCTYPE html>
+<html>
 
-	<html>
-		<head>
-			<title>Super title</title>
-		</head>
-		<body>
-	
-		</body>
-		</html>
+  <head>
 
+    <meta charset="utf-8">
+    <title>Project 1</title>
+
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/grid.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    
+
+    <h1>Style Guide for Ice Cream Shop</h1>
+
+    <p>The style guide for Joey and Ava's upcoming website.</p>
+
+
+    <nav>
+      
+      <p>
+        Go to:
+        <a href="#interactive_elements">Interactive Elements</a>,
+        <a href="#text_elements">Text Elements</a>,
+        <a href="#combined_elements">Combined Elements</a>,
+      </p>
+
+    </nav>
+
+
+
+    <!-- INTERACTIVE ELEMENTS SECTION // -->
+    <section id="interactive_elements">
+
+      <!-- Default Button styling section -->
+      <section>
+
+        <h2>Navigation Button</h2>
+
+        <h3>CSS selector:</h3>
+            <p>nav_button</p>
+
+        <h3>HTML Code:</h3>
+            <code class="code">&lt;class="nav_button"&gt;Default Button&lt;/a&gt;</code>
+            <code class="code">&lt;class="nav_button"&gt;Motherboard&lt;/a&gt;</code>
+            <code class="code">&lt;class="nav_button"&gt;Video Cards&lt;/a&gt;</code>
+            <code class="code">&lt;class="nav_button"&gt;Monitors&lt;/a&gt;</code>
+        
+        <h3>Rendered element:</h3>
+            <a class="nav_button" >Default Button</a>
+            <a class="nav_button" >Motherboard</a>
+            <a class="nav_button" >Video Cards</a>
+            <a class="nav_button" >Monitors</a>
+
+      </section>
+
+      <section>
+        <h2>In-text link</h2>
+        <h5>Example</h5>
+            <p>if you want to read more click <a class="link" href="#" >here</a> or just leave.</p>
+      </section>
+
+      <section>
+        <h2>Submit/Reset Buttons</h2>
+        <h5>Example</h5>
+            <a href="#" class="button-link">Submit here</a>
+      </section>
+
+      <section>
+        <h2>Text Input Field</h2>
+        <h3>CSS selector:</h3>
+            <p>text-field</p>
+        <h5>Example</h5>
+            <label for="form-name">Name:</label>
+            <input type="text" id= "form-name" value="" placeholder="Type something here" class="text-field">
+      </section>
+
+    </section>
+    <!-- // INTERACTIVE ELEMENTS SECTION -->
+
+
+
+    <!-- TEXT ELEMENTS SECTION // -->
+    <section id="text_elements">
+
+      <section>
+        <h2>Typography</h2>
+        
+        <h3>CSS selector:</h3>
+            <p>section h1,section h2, section h3,section h4,section p</p>
+        
+        <h5>Example</h5>
+            <p >h1</p>  <h1 >EAT without limits.</h1>
+            <p >h2</p>  <h2 >EAT without limits.</h2>
+            <p >h3</p>  <h3 >EAT without limits.</h3>
+            <p >h4</p>  <h4 >EAT without limits.</h4>
+            <p >p</p>   <p>EAT without limits.</p>
+      
+        <h3>HTML Code</h3>
+            <code class="code"><span>&lt;section&gt;</span></code>
+            <code class="code">h1</code>
+            <code class="code"><span>&lt;h1&gt;</span>EAT without limits.<span>&lt;/h1&gt;</span></code>
+            <code class="code">h2</code>
+            <code class="code"><span>&lt;h2&gt;</span>EAT without limits.<span>&lt;/h2&gt;</span></code>
+            <code class="code">h3</code>
+            <code class="code"><span>&lt;h3&gt;</span>EAT without limits.<span>&lt;/h3&gt;</span></code>
+            <code class="code">h4</code>
+            <code class="code"><span>&lt;h4&gt;</span>EAT without limits.<span>&lt;/h4&gt;</span></code>
+            <code class="code">p</code>
+            <code class="code"><span>&lt;p&gt;</span>EAT without limits.<span>&lt;/p&gt;</span></code>
+            <code class="code"><span>&lt;/section&gt;</span></code>
+      </section>
+
+      <section>
+        <h2>Bulleted Lists</h2>
+          <ul>
+            <li>this is a test</li>
+            <li>this is the second test</li>
+            <li>this is the final test</li>
+          </ul>
+      </section>
+
+      <section>
+        <h2>Numbered Lists</h2>
+          <ol>
+            <li>this is a test</li>
+            <li>this is the second test</li>
+            <li>this is the final test</li>
+          </ol>
+      </section>
+
+    </section>
+    <!-- // TEXT ELEMENTS SECTION -->
+
+
+
+    <!-- COMBINED ELEMENTS SECTION // -->
+    <section id="combined_elements">
+
+      <section>
+        <h2>Main Navigation</h2>
+
+        <h3>CSS selector:</h3>
+            <p>grid</p>
+
+          <nav class="grid">
+
+            <div class="col-2of10">
+                <a href="#" class="button-nav bg1">Latest News</a>
+            </div>
+
+            <div class="col-2of10">
+                <a href="#" class="button-nav bg2">Promotions</a>
+           </div>
+
+            <div class="col-2of10">
+                 <a href="#" class="button-nav bg3">Video Cards</a>
+            </div>
+
+            <div class="col-2of10">
+                 <a href="#" class="button-nav bg4">Motherboard</a>
+            </div>
+
+            <div class="col-2of10">
+                 <a href="#" class="button-nav bg5">Monitor</a>
+            </div>
+          </nav>
+
+        <h3>HTML Code</h3>
+            <code class="code"><span>&lt;section&gt;</span></code>
+            <code class="code"><span>&lt;a class="col-2of10 button-nav bg1"&gt;</span>Latest News<span>&lt;/a&gt;</span></code>
+            <code class="code"><span>&lt;a class="col-2of10 button-nav bg2"&gt;</span>Promotions<span>&lt;/a&gt;</span></code>
+            <code class="code"><span>&lt;a class="col-2of10 button-nav bg3"&gt;</span>Video Cards<span>&lt;/a&gt;</span></code>
+            <code class="code"><span>&lt;a class="col-2of10 button-nav bg4"&gt;</span>Motherboard<span>&lt;/a&gt;</span></code>
+            <code class="code"><span>&lt;a class="col-2of10 button-nav bg5"&gt;</span>Monitor<span>&lt;/a&gt;</span></code>
+            <code class="code"><span>&lt;/section&gt;</span></code>
+      </section>
+
+      <section>
+        <h2>Product Listing</h2>
+            <img src="img/1.png" width="200" height="200" alt="123">
+            <p>The best TASTE on earth waiting for you.</p>
+            <p>Know <a href="#" >more</a></p>
+
+            <img src="img/2.png" width="200" height="200" alt="123">
+            <p>The best TASTE on earth waiting for you.</p>
+            <p>Know <a href="#" >more</a></p>
+
+            <img src="img/3.png" width="200" height="200" alt="123">
+            <p>The best TASTE on earth waiting for you.</p>
+            <p>Know <a href="#" >more</a></p>
+      </section>
+
+    </section>
+    <!-- // COMBINED ELEMENTS SECTION -->
+
+
+  </body>
+</html>
