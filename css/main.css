@@ -75,7 +75,7 @@ section h2 {
   color: white;
 }
 .nav_button:hover{
-  color: red;
+  color: pink;
   cursor:pointer;
 }
 
@@ -96,7 +96,7 @@ section h2 {
   transition: border .25s linear,color .25s linear,background-color .25s linear;
 }
  .text-field:focus{
-border-color: #27AE60;
+border-color: #ef3298;
   outline: 0;
   box-shadow: none;
 }
@@ -118,7 +118,7 @@ border-color: #27AE60;
 
  .button-link:visited{
   color: #000;
-  background-color: #EAA698;
+  background-color: #ffc0cb;
  }
 
  .button-link:hover, .button-link:focus {
@@ -161,3 +161,34 @@ color:#66FF66;
 /* 
   COMBINED ELEMENTS -------------------
 */
+
+/* product listing*/
+<style>
+div.img {
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid #ffffff;
+    height: auto;
+    width: auto;
+    float: left;
+    text-align: center;
+} 
+
+div.img img {
+    display:inline;
+    margin: 5px;
+    border: 1px solid #ffffff;
+}
+
+div.img a:hover img {
+    border: 2px solid #ffffff;
+}
+
+div.desc {
+  text-align: center;
+  font-weight: normal;
+  font-family: Verdana;
+  font-size: 1em;
+  width: 130px;
+  margin: 5px;
+}
