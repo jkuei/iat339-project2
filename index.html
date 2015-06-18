@@ -1,217 +1,301 @@
 <!DOCTYPE html>
 <html>
+<head>
+	<title>Style Guide for IAT339</title>
+	<link rel="stylesheet" href="css/style-guide.css">
 
-  <head>
+</head>
+<body>
 
-    <meta charset="utf-8">
-    <title>Project 1</title>
+	<div class="container">
+		<div class="headline">
+			<div class="logo"></div>
+	        <h1 class="logo">
+	          Le' Ice Cream
+	        </h1>
+	        <h4 class="title hundred">Style guide for Le' Ice Cream</h4>
+	</div>
+	<section id="typography">
+	    <h4 class="section-title no-top">Typography</h4>
+			<div class="examples hundred">
+				<p class="type-title ten">h1</p>	<h1 class="ninty">Eat and gain weight.</h1>
+				<p class="type-title ten">h2</p>	<h2 class="ninty">Eat and gain weight.</h2>
+				<p class="type-title ten">h3</p>	<h3 class="ninty">Eat and gain weight.</h3>
+				<p class="type-title ten">h4</p>	<h4 class="ninty">Eat and gain weight.</h4>
+				<p class="type-title ten">p</p>		<p class="ninty">Eat and gain weight.</p>
+			</div>
+			<div class="code hundred">
+				<h5 class="title hundred">Code</h5>
+				<div class="fifty">
+					<h6 class="title">html</h6>
+					<div class="inner-code ninty">
+						<p class="type-title ten">h1</p>
+						<p class="ninty codes"><span>&lt;h1&gt;</span>Eat and gain weight.<span>&lt;/h1&gt;</span></p>
+						<p class="type-title ten">h2</p>
+						<p class="ninty codes"><span>&lt;h2&gt;</span>Eat and gain weight.<span>&lt;/h2&gt;</span></p>
+						<p class="type-title ten">h3</p>
+						<p class="ninty codes"><span>&lt;h3&gt;</span>Eat and gain weight.<span>&lt;/h3&gt;</span></p>
+						<p class="type-title ten">h4</p>
+						<p class="ninty codes"><span>&lt;h4&gt;</span>Eat and gain weight.<span>&lt;/h4&gt;</span></p>
+						<p class="type-title ten">p</p>
+						<p class="ninty codes"><span>&lt;p&gt;</span>Eat and gain weight.<span>&lt;/p&gt;</span></p>
+					</div>
+				</div>
+				<div class="fifty">
+					<h6 class="title">css</h6>
+					<div class="inner-code ninty">
+						<p class="type-title ten">h1</p>
+						<p class="ninty codes"><span>h1 { </span>font-size: 48px; font-weight: 700; color: #000<span> }</span></p>
+						<p class="type-title ten">h2</p>
+						<p class="ninty codes"><span>h2 { </span>font-size: 40px; font-weight: 700; color: #000<span> }</span></p>
+						<p class="type-title ten">h3</p>
+						<p class="ninty codes"><span>h3 { </span>font-size: 32px; font-weight: 700; color: #000<span> }</span></p>
+						<p class="type-title ten">h4</p>
+						<p class="ninty codes"><span>h4 { </span>font-size: 24px; font-weight: 500; color: #000<span> }</span></p>
+						<p class="type-title ten">p</p>
+						<p class="ninty codes"><span>p { </span>font-size: 16px; font-weight: 200; color: #000<span> }</span></p>
+					</div>
+				</div>
+			</div>	
+		</section>
 
-    <link href="css/main.css" rel="stylesheet">
-    <link href="css/grid.css" rel="stylesheet">
+	<!-- END OF TYPOGRAPHY -->
 
-  </head>
+	<section>
+		<h4 class="section-title">Inputs</h4>
+			<div class="examples hundred">
+            	<input type="text" value="" placeholder="Type Something Here" class="form-default quarter">
+			</div>
+			<div class="code hundred">
+				<h5 class="title hundred">Code</h5>
+				<div class="fifty">
+					<h6 class="title">html</h6>
+					<div class="inner-code ninty">
+						<p class="type-title ten">input</p>
+						<p class="ninty codes">
+						<span>&lt;input type="</span>text<span>" value="" placeholder="</span>Type Something Here<span>" class="</span>form-default quarter<span>"&gt;</span>
+						</p>
+					</div>
+				</div>
+				<div class="fifty">
+					<h6 class="title">css</h6>
+					<div class="inner-code ninty">
+						<p class="type-title ten">input</p>
+						<p class="ninty codes">
+							<span>.form-default { </span><br>
+							height: 42px;<br>
+							padding: 8px 12px;<br>
+							font-family: "Verdana", Helvetica, Arial, sans-serif;<br>
+							font-size: 15px;<br>
+							line-height: 1.467;<br>
+							color: #7F8C8D;<br>
+							border: 2px solid #7F8C8D;<br>
+							border-radius: 6px;<br>
+							box-shadow: none;<br>
+							-webkit-transition: border .25s linear,color .25s linear,background-color .25s linear;<br>
+							transition: border .25s linear,color .25s linear,background-color .25s linear;<br>
+							<span> }</span>
 
-  <body>
+							<br>
+							<br>
 
-    
+							<span>.form-default:focus { </span><br>
+							border-color: #27AE60;<br>
+							outline: 0;<br>
+							box-shadow: none;<br>
+							<span> }</span>
+							</p>
+					</div>
+				</div>
+			</div>
+	</section>
 
-    <h1>Style Guide for Softpeaks</h1>
+<!-- END OF INPUTS -->
 
-    <p>The style guide for Joey and Ava's upcoming website.</p>
+	<section>
+		<h4 class="section-title">Buttons</h4>
+			<div class="examples hundred">
+				<a href="#" class="button-link">Submit Here</a>
+			</div>
+			<div class="code hundred">
+				<h5 class="title hundred">Code</h5>
+				<div class="fifty">
+					<h6 class="title">html</h6>
+					<div class="inner-code ninty">
+						<p class="type-title ten">btn</p>
+						<p class="ninty codes">
 
+						<span>&lt;a href="</span>#<span>" class="</span>button-link<span>"&gt;</span>Submit Here<span>&lt;/a&gt;</span>
+						</p>
+					</div>
+				</div>
+				<div class="fifty">
+					<h6 class="title">css</h6>
+					<div class="inner-code ninty">
+						<p class="type-title ten">btn</p>
+						<p class="ninty codes">
+							<span>.button-link { </span><br>
+						 	text-align: center;<br>
+						 	white-space: normal;<br>
+						 	padding: 10px 20px;<br>
+							font-size: 16px;<br>
+							line-height: 24px;<br>
+							border-radius: 6px;<br>
+							color: #fff;<br>
+							background-color: #ffc0cb;<br>
+							-webkit-transition: border .25s linear,color .25s linear,background-color .25s linear;<br>
+							transition: border .25s linear,color .25s linear,background-color .25s linear;<br>
+							-webkit-font-smoothing: subpixel-antialiased;<br>
+							text-decoration: none;<br>
+						 	<span> }</span>
 
-    <nav>
-      
-      <p>
-        Go to:
-        <a href="#interactive_elements">Interactive Elements</a>,
-        <a href="#text_elements">Text Elements</a>,
-        <a href="#combined_elements">Combined Elements</a>,
-      </p>
+							<br>
+												 	
+							<br>
 
-    </nav>
+						 	<span>.button-link:hover, .button-link:focus { </span><br>
+						 	color: #fff;<br>
+							background-color: #f6dbd5;<br>
+							border-color: #f6dbd5;<br>
+							<span> }</span>
 
+							<br>
+							<br>
+						</p>
+					</div>
+				</div>
+			</div>
+	</section>
 
+<!-- END OF BUTTONS -->
 
-    <!-- INTERACTIVE ELEMENTS SECTION // -->
-    <section id="interactive_elements">
+	<section id="nav">
+		<h4 class="section-title">Navigaton Group</h4>
+			<div class="examples hundred">
+				<nav class="navigation">
+					<ul> 
+						<li><a href="#nav" >Home</a></li>
+						<li><a href="#nav" >Media</a></li>
+						<li><a href="#nav" >Event</a></li>
+						<li><a href="#nav" >Service</a></li>
+						<li><a href="#nav" >About Us</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="code hundred">
+				<h5 class="title hundred">Code</h5>
+				<div class="fifty">
+					<h6 class="title">html</h6>
+					<div class="inner-code ninty">
+						<p class="type-title ten">nav</p>
+						<p class="seventy codes">
+							<span>&lt;nav class="</span>navigation<span>"&gt;</span><br>
+								<span>&lt;ul&gt;</span><br>
+									<span>&lt;li&gt;</span><br>
 
-      <!-- Default Button styling section -->
-      <section>
+									<span>&lt;a href="</span>#nav<span>"&gt;</span>Home<span>&lt;/a&gt;<br></span>
 
-        <h2>Navigation Button</h2>
+									<span>&lt;/li&gt;<br></span>
 
-        <h3>CSS selector:</h3>
-            <p>nav_button</p>
+									<span>&lt;li&gt;<br></span>
 
-        <h3>HTML Code:</h3>
-            <code class="code">&lt;class="nav_button"&gt;Default Button&lt;/a&gt;</code>
-            <code class="code">&lt;class="nav_button"&gt;Motherboard&lt;/a&gt;</code>
-            <code class="code">&lt;class="nav_button"&gt;Video Cards&lt;/a&gt;</code>
-            <code class="code">&lt;class="nav_button"&gt;Monitors&lt;/a&gt;</code>
-        
-        <h3>Rendered element:</h3>
-            <a class="nav_button" >Ice Cream</a>
-            <a class="nav_button" >Media</a>
-            <a class="nav_button" >Event</a>
-            <a class="nav_button" >Store</a>
+									<span>&lt;a href="</span>#nav<span>"&gt;</span>Media<span>&lt;/a&gt;<br></span>
 
-      </section>
+									<span>&lt;/li&gt;<br></span>
 
-      <section>
-        <h2>In-text link</h2>
-        <h5>Example</h5>
-            <p>if you want to read more click <a class="link" href="#" >here</a> or just leave.</p>
-      </section>
+									<span>&lt;li&gt;<br></span>
 
-      <section>
-        <h2>Submit/Reset Buttons</h2>
-        <h5>Example</h5>
-            <a href="#" class="button-link">Submit here</a>
-      </section>
+									<span>&lt;a href="</span>#nav<span>"&gt;</span>Event<span>&lt;/a&gt;<br></span>
 
-      <section>
-        <h2>Text Input Field</h2>
-        <h3>CSS selector:</h3>
-            <p>text-field</p>
-        <h5>Example</h5>
-            <label for="form-name">Name:</label>
-            <input type="text" id= "form-name" value="" placeholder="Type something here" class="text-field">
-      </section>
+									<span>&lt;/li&gt;<br></span>
 
-    </section>
-    <!-- // INTERACTIVE ELEMENTS SECTION -->
+									<span>&lt;li&gt;<br></span>
+									<span>&lt;a href="</span>#nav<span>"&gt;</span>Service<span>&lt;/a&gt;<br></span>
 
+									<span>&lt;/li&gt;<br></span>
 
+									<span>&lt;li&gt;<br></span>
+									<span>&lt;a href="</span>#nav<span>"&gt;</span>About Us<span>&lt;/a&gt;<br></span>
 
-    <!-- TEXT ELEMENTS SECTION // -->
-    <section id="text_elements">
+									<span>&lt;/li&gt;<br></span>
 
-      <section>
-        <h2>Typography</h2>
-        
-        <h3>CSS selector:</h3>
-            <p>section h1,section h2, section h3,section h4,section p</p>
-        
-        <h5>Example</h5>
-        <p>Heading: Source Sans Pro</p>
-        <p>Paragraph: Verdana</p>
-            <p >h1</p>  <h1 >EAT without limits. 47px</h1>
-            <p >h2</p>  <h2 >EAT without limits.32px</h2>
-            <p >h3</p>  <h3 >EAT without limits.20px</h3>
-            <p >h4</p>  <h4 >EAT without limits.18px</h4>
-            <p >p</p>   <p>EAT without limits.16px</p>
-      
-        <h3>HTML Code</h3>
-            <code class="code"><span>&lt;section&gt;</span></code>
-            <code class="code">h1</code>
-            <code class="code"><span>&lt;h1&gt;</span>EAT without limits.<span>&lt;/h1&gt;</span></code>
-            <code class="code">h2</code>
-            <code class="code"><span>&lt;h2&gt;</span>EAT without limits.<span>&lt;/h2&gt;</span></code>
-            <code class="code">h3</code>
-            <code class="code"><span>&lt;h3&gt;</span>EAT without limits.<span>&lt;/h3&gt;</span></code>
-            <code class="code">h4</code>
-            <code class="code"><span>&lt;h4&gt;</span>EAT without limits.<span>&lt;/h4&gt;</span></code>
-            <code class="code">p</code>
-            <code class="code"><span>&lt;p&gt;</span>EAT without limits.<span>&lt;/p&gt;</span></code>
-            <code class="code"><span>&lt;/section&gt;</span></code>
-      </section>
+									<span>&lt;li&gt;<br></span>
+									
+									
 
-      <section>
-        <h2>Bulleted Lists</h2>
-          <ul>
-            <li>this is a test</li>
-            <li>this is the second test</li>
-            <li>this is the final test</li>
-          </ul>
-      </section>
+							<span>&lt;/nav&gt;</span>
+						</p>
+					</div>
+				</div>
+				<div class="fifty">
+					<h6 class="title">css</h6>
+					<div class="inner-code ninty">
+						<p class="type-title ten">nav</p>
+						<p class="ninty codes">
+							<span>nav.navigation {</span><br>
+							font-size: 14px;<br>
+							padding-top: 16px;<br>
+							<span>}</span><br>
 
-      <section>
-        <h2>Numbered Lists</h2>
-          <ol>
-            <li>this is a test</li>
-            <li>this is the second test</li>
-            <li>this is the final test</li>
-          </ol>
-      </section>
+							<br>
 
-    </section>
-    <!-- // TEXT ELEMENTS SECTION -->
+							<span>nav.navigation ul {</span><br>
+							font-size: 0;<br>
+							<span>}</span><br>
 
+							<br>
 
+							<span>nav.navigation ul li {</span><br>
+							box-sizing: border-box;<br>
+							display: inline-block;<br>
+							list-style-type: none;<br>
+							<span>}</span><br>
 
-    <!-- COMBINED ELEMENTS SECTION // -->
-    <section id="combined_elements">
+							<br>
 
-      <section>
-        <h2>Main Navigation</h2>
+							<span>nav.navigation ul li a {</span><br>
+							text-align: center;<br>
+							white-space: normal;<br>
+							padding: 24px 32px;<br>
+							font-size: 16px;<br>
+							line-height: 24px;<br>
+							color: #fff;<br>
+							background-color: #eacf98;<br>
+							-webkit-transition: border .25s linear,color .25s linear,background-color .25s linear;<br>
+							transition: border .25s linear,color .25s linear,background-color .25s linear;<br>
+							-webkit-font-smoothing: subpixel-antialiased;<br>
+							text-decoration: none;<br>
+							<span>}</span><br>
 
-        <h3>CSS selector:</h3>
-            <p>grid</p>
+							<br>
 
-          <nav class="grid">
+							<span>nav.navigation ul li:first-child a {</span><br>
+							border-top-left-radius: 6px;<br>
+							border-bottom-left-radius: 6px;<br>
+							<span>}</span><br>
 
-            <div class="col-2of10">
-                <a href="#" class="button-nav bg1">Ice Cream</a>
-            </div>
+							<br>
 
-            <div class="col-2of10">
-                <a href="#" class="button-nav bg2">Media</a>
-           </div>
+							<span>nav.navigation ul li:last-child a {</span><br>
+							border-top-right-radius: 6px;<br>
+							border-bottom-right-radius: 6px;<br>
+							<span>}</span><br>
 
-            <div class="col-2of10">
-                 <a href="#" class="button-nav bg3">Event</a>
-            </div>
+							<br>
 
-            <div class="col-2of10">
-                 <a href="#" class="button-nav bg4">Service</a>
-            </div>
+							<span>nav.navigation ul li a:hover, nav.navigation ul li a:focus {</span><br>
+							color: #fff;<br>
+							background-color: #2ECC71;<br>
+							border-color: #2ECC71;<br>
+							<span>}</span><br>
 
-            <div class="col-2of10">
-                 <a href="#" class="button-nav bg5">About Us</a>
-            </div>
+							<br>
 
-            <div class="col-2of10">
-                 <a href="#" class="button-nav bg5">Store</a>
-            </div>
-
-          </nav>
-
-        <h3>HTML Code</h3>
-            <code class="code"><span>&lt;section&gt;</span></code>
-            <code class="code"><span>&lt;a class="col-2of10 button-nav bg1"&gt;</span>Latest News<span>&lt;/a&gt;</span></code>
-            <code class="code"><span>&lt;a class="col-2of10 button-nav bg2"&gt;</span>Promotions<span>&lt;/a&gt;</span></code>
-            <code class="code"><span>&lt;a class="col-2of10 button-nav bg3"&gt;</span>Video Cards<span>&lt;/a&gt;</span></code>
-            <code class="code"><span>&lt;a class="col-2of10 button-nav bg4"&gt;</span>Motherboard<span>&lt;/a&gt;</span></code>
-            <code class="code"><span>&lt;a class="col-2of10 button-nav bg5"&gt;</span>Monitor<span>&lt;/a&gt;</span></code>
-            <code class="code"><span>&lt;/section&gt;</span></code>
-      </section>
-
-      <section>
-        <h2>Product Listing</h2>
-          <div class="img">
-            <a  href="">
-              <img src="img/one.jpg" alt="Klematis" width="130" height="90">
-            </a>
-            <div class="desc">Rockey Mountain</div>
-          </div>
-          <div class="img">
-            <a  href="">
-              <img src="img/two.jpg" alt="Klematis" width="130" height="90">
-            </a>
-            <div class="desc">Orange Peaks</div>
-          </div>
-          <div class="img">
-            <a  href="">
-              <img src="img/three.jpg" alt="Klematis" width="130" height="90">
-            </a>
-            <div class="desc">Original peaks</div>
-          </div>
-      </section>
-
-    </section>
-    <!-- // COMBINED ELEMENTS SECTION -->
-
-
-  </body>
+						</p>
+					</div>
+				</div>
+			</div>
+	</section>
+	</div>
+</body>
 </html>
