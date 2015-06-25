@@ -1,62 +1,85 @@
 html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 *, *:before, *:after {
   box-sizing: inherit;
 }
- /* =========================================================
-  * Above calls a natural box layout model to all elements.
-  * Below calls no padding on all elements, define everything.
-  * ========================================================= */
 * {
 	padding: 0;
 	margin: 0;
 }
+#content {
+  margin: 0 15%;
+  border: 0;
+}
+.grid-col-1 {
+  width: 20%;
+}
 
- /* =========================================================
-  * GLOBAL STYLES - These are hidden from the code section
-  * and used only to stylize the style guide.
-  * ========================================================= */
+.grid-col-2 {
+  width: 40%;
+}
+
+.grid-col-3 {
+  width: 60%;
+}
+
+.grid-col-4 {
+  width: 80%;
+}
+
+.grid-col-5 {
+  width: 100%;
+}
+
+[class^=grid-col-] {
+  display: inline-block;
+  float:left;
+}
+
+[class^=grid-col-] p {
+  padding: 0 1.0rem;
+  margin: 0;
+}
+
+.grid-50:after, .grid-25:after {
+  display:block;
+  content:"";
+  clear: both;
+}
+
+
+/* index-layout:re */
+
+.grid-50 .featured-item {
+  background-color: rgba(235, 235, 235, 1.0);
+  padding: 1.0rem;
+}
+
+img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+}
 
 body {
 	color: #000;
 	background-color: #e5e5e5;
 	font-size: 1em;
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: "Verdana", Helvetica, Arial, sans-serif;
 }
 
-/* =========================================================
- * index-link to be removed when index is actually created
- * ========================================================= */
-.index-link {
-	padding-top: 48px;
-}
-.index-link a:link {color: #27AE60; font-size: 2em; text-align: center;}
-.index-link a:visited {color: #27AE60;}
-.index-link a:hover {color: #16BD50; text-decoration: underline;}
-.index-link a:active {color: #7F8C8D; }
-/* =========================================================
- * index-link to be removed when index is actually created
- * ========================================================= */
 
 div.headline {
 	padding: 73px 0 110px;
 	text-align: center;
 }
 
-div.headline div.logo {
-	width: 236px;
-	height: 144px;
-	margin: 0 auto 26px;
-	overflow: hidden;
-	text-indent: -9999em;
-	background: url(../img/logo.png) center 0 no-repeat;
-	background-size: 236px 144px;
-}
-
 div.headline h1.logo {
 	margin: 10px 0;
-	font: 900 90px/100px "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font: 900 90px/100px "Source Sans Pro", Helvetica, Arial, sans-serif;
 	letter-spacing: -2px;
 }
 
@@ -93,10 +116,7 @@ section {
 .examples h2,
 .examples h3,
 .examples h4,
-.examples h5,
-.examples h6,
-.examples p,
-.examples small {
+.examples p{
 	padding-top: 8px;
 	display: inline-block;
 }
@@ -109,7 +129,7 @@ section {
 .title {
 	margin-bottom: 24px;
 	color: #555;
-	font-family: "Ubuntu"
+	font-family: "Verdana"
 }
 
 h6.title {
@@ -121,11 +141,11 @@ p.type-title {
 	color: #555;
 	font-size: 14px;
 	padding-right: 24px;
-	font-family: "Ubuntu"	
+	font-family: "Verdana"	
 }
 
 .inner-code {
-	font-family: "Ubuntu";
+	font-family: "Verdana";
 	color: #fff;
 	background-color: #222;
 	border: 1px solid #000;
@@ -145,7 +165,7 @@ p.type-title {
 }
 
 .inner-code span {
-	color: #CC9900;
+	color: #27AE60;
 }
 
  /* =========================================================
@@ -157,47 +177,28 @@ section {
 }
 
 h1 {
-	font-size: 56px;
-	font-weight: 700;
-}
-
-h2 {
 	font-size: 48px;
 	font-weight: 700;
 }
 
+h2 {
+	font-size: 40px;
+	font-weight: 700;
+}
+
 h3 {
-	font-size: 42px;
+	font-size: 32px;
 	font-weight: 700;
 }
 
 h4 {
-	font-size: 36px;
+	font-size: 24px;
 	font-weight: 500;
 }
 
 p {
-	font-size: 18px;
+	font-size: 16px;
 	font-weight: 200;
-}
-
-small {
-	font-weight: 200;
-	font-size: 14px;
-}
-
- /* =========================================================
-  * IMAGE STYLES - each images default styles
-  * ========================================================= */
-
-img {
-	max-width: 100%;
-	border-radius: 10px;
-	border: 0px solid #000;
-	display: block;
-	height: auto;
-	box-sizing: border-box;
-	margin: 0 auto;
 }
 
 /* =========================================================
@@ -207,7 +208,7 @@ img {
 .form-default {
 	height: 42px;
 	padding: 8px 12px;
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: "Verdana", Helvetica, Arial, sans-serif;
 	font-size: 15px;
 	line-height: 1.467;
 	color: #7F8C8D;
@@ -234,28 +235,18 @@ img {
 	font-size: 16px;
 	line-height: 24px;
 	border-radius: 6px;
-	color: #fff;
-	background-color: #27AE60;
+	color: #000;
+	background-color: #ffc0cb;
 	-webkit-transition: border .25s linear,color .25s linear,background-color .25s linear;
 	transition: border .25s linear,color .25s linear,background-color .25s linear;
 	-webkit-font-smoothing: subpixel-antialiased;
 	text-decoration: none;
  }
 
- .button-link:visited{
- 	color: #fff;
-	background-color: #27AE60;
- }
-
  .button-link:hover, .button-link:focus {
- 	color: #fff;
-	background-color: #2ECC71;
-	border-color: #2ECC71;
- }
-
- .button-link:active {
- 	background: #95A5A6;
-	border-color: #95A5A6;
+  color: #000;
+  background-color: #f6dbd5;
+  border-color: #f6dbd5;
  }
 
  /* =========================================================
@@ -281,10 +272,10 @@ nav.navigation ul li a {
 	text-align: center;
  	white-space: normal;
  	padding: 24px 32px;
-	font-size: 18px;
+	font-size: 16px;
 	line-height: 24px;
 	color: #fff;
-	background-color: #27AE60;
+	background-color: #eacf98;
 	-webkit-transition: border .25s linear,color .25s linear,background-color .25s linear;
 	transition: border .25s linear,color .25s linear,background-color .25s linear;
 	-webkit-font-smoothing: subpixel-antialiased;
@@ -300,10 +291,9 @@ nav.navigation ul li:last-child a {
 	border-top-right-radius: 6px;
 	border-bottom-right-radius: 6px;
 }
-
 nav.navigation ul li a:visited{
  	color: #fff;
-	background-color: #27AE60;
+	background-color: #ffc0cb;
  }
 
  nav.navigation ul li a:hover, nav.navigation ul li a:focus {
@@ -312,16 +302,6 @@ nav.navigation ul li a:visited{
 	border-color: #2ECC71;
  }
 
-nav.navigation ul li a:active {
- 	background: #95A5A6;
-	border-color: #95A5A6;
- }
-
- nav.navigation ul li a.active {
- 	color: #fff;
-	background-color: #2ECC71;
-	border-color: #2ECC71;
-}
 
  /* =========================================================
   * WIDTH CLASSES - percentages used to maintain inline-blocks
