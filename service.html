@@ -1,98 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
-
-
-  <!-- This section helps define what a browser needs to know about our webpage -->
+<html>
   <head>
-
-    <!-- This defines what character set (language/fonts) by this webpage -->
-    <meta charset="utf-8">
-
-    <title>Service</title>
-
-    <link rel="stylesheet" href="css/main.css">
-  
+	  <meta charset="utf-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1">
+  <title>Joey & Ava Le' Ice Cream</title>
+	  <link href="css/main.css" rel="stylesheet">
+ 	  <link href='http://fonts.googleapis.com/css?family=Lato:400,900' rel='stylesheet' type='text/css'>
+ 	  <link href='http://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
   </head>
 
+  <header>
+    <nav id ="topnav">
+    <div class="nav-item"><a href="index.html">HOME</a></div>
+    <div class="nav-item"><a href="media.html">MEDIA</a></div>
+    <div class="nav-item"><a href="event.html">EVENTS</a></div>
+    <div class="nav-item selected"><a href="service.html">SERVICE</a></div>
+    <div class="nav-item"><a href="about.html">ABOUT</a></div>
+  </nav>
+  <div id="banner">
+    <img src="img/flavor.jpg">
+  </div>
+  </header>
 
 <body>
+	 <section id="content">
 
-<div id="header">
-<img src="img/sp_logo_retina.png">
-
-<nav class="navigation">
-<ul>
-<li>
-<a href="index.html">Ice Cream</a>
-</li>
-<li>
-<a href="media.html">Media</a>
-</li>
-<li>
-<a href="event.html">Event</a>
-</li>
-<li>
-<a href="#">Service</a>
-</li>
-<li>
-<a href="about.html">About Us</a>
-</li>
-</nav>
-</div>
-
-<!-- <div id="nav">
-London<br>
-Paris<br>
-Tokyo<br>
-</div>
- -->
-<div id="banner">
-<img src="img/softpeaks_001.jpg">
-</div>
-
-<div id="section1">
-<h2> CARTERING</h2>
-<hr>
-<p> Let's get party! 
-Softpeaks can get you a fresh and healthy ice cream for you and your friends. They are made of 100% natural honey and organic milk. Make happy day with our product and smile. Share fun and enjoy with your friends. </p>
-			
-      <label for="form-name">First Name</label>
-            <input type="text" value="" placeholder="" class="form-default quarter">
-
-     <label for="form-name">Last Name</label>
-            <input type="text" value="" placeholder="" class="form-default quarter">
-
-    <label for="form-name">Email</label>
-            <input type="text" value="" placeholder="" class="form-default quarter">
-
-      <label for="form-name">Phone Number</label>
-            <input type="text" value="" placeholder="" class="form-default quarter">        
-
-        <label for="form-name">Date of Event</label>
-            <input type="text" value="" placeholder="" class="form-default quarter">      
-
-         <label for="form-name">Date of Event</label>
-            <input type="text" value="" placeholder="" class="form-default quarter">  
-
-             <label for="form-name">Time of Event</label>
-            <input type="text" value="" placeholder="" class="form-default quarter">   
-
-        <label for="form-name">Location of Event</label>
-            <input type="text" value="" placeholder="" class="form-default quarter">      
-
-         <label for="form-name">Number of Guests</label>
-            <input type="text" value="" placeholder="" class="form-default quarter">      
-
-
-            <a href="#" class="button-link">Submit Here</a>
-            
-
-</div>
-<div id="section2">
-
-
-</div>
-
+    <div class="grid-50">
+        <div class="grid-col-2">
+          <h1>Catering Services</h1>
+          <p>Let's get party! Softpeaks can get you a fresh and healthy ice cream for you and your friends. They are made of 100% natural honey and organic milk. Make happy day with our product and smile. Share fun and enjoy with your friends.</p>
+        </div>
+        <div class="grid-col-1">
+          <h2></h2>
+        </div>
+        <div class="grid-col-2">
+          <h1>Information</h1>
+          <h3>Name: </h3>
+          <input type="text" value="" placeholder="Type Something Here" class="form-default">
+          <h3>Email: </h3>
+          <input type="text" value="" placeholder="Type Something Here" class="form-default">
+          <a href="#" class="btn submit">Submit</a>
+        </div>
+      </div>
+      </section>
+              <section>
+      <nav id="footer">
+        <div class="meta">
+          <div><a class="footer-link" href="">Credits</a></div>
+        </div>
+      </nav>
+    </section>
 
 </body>
 </html>
