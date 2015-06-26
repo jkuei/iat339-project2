@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: "Verdana", Helvetica, Arial, sans-serif;
   background-color: rgba(255, 255, 254, 1.0);
   color: rgba(30, 35, 35, 1.0);
   padding: 0;
@@ -40,17 +40,6 @@ header img {
   border: 0;
 }
 
-#game-content {
-    padding: 0;
-    border: 0;
-    text-align: center;
-    margin-top: 2em;
-  }
-
-#game-content p {
-  margin: 0;
-}
-
 .banner {
   width: 60%;
   margin-top: 2em;
@@ -80,7 +69,7 @@ section {
 
 section h1 {
   font-weight: bold;
-  font-family: "Oswald";
+  font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
   font-size: 1.8rem;
   margin: 1em 0;
 }
@@ -100,7 +89,7 @@ section h3 {
 }
 
 section h1 b, section h2 b, section h3 b {
-  font-family: "Lato";
+  font-family: "Verdana", Helvetica, Arial, sans-serif;
   font-size: 1.0rem;
   font-weight: normal;
   color: rgba(135, 135, 135, 1.0);
@@ -247,7 +236,7 @@ a.remove:hover {
 #topnav {
   margin: 0 15%;
   padding: 0;
-  background-color: rgba(60, 60, 60, 1.0);
+  background-color: #eacf98;
 }
 
 #cartnav {
@@ -369,64 +358,16 @@ outline: 0;
 box-shadow: none;
 }
 
+.thankyou{
+  text-align: center;
+  padding: 2rem;
+  font-size: 2.5rem;
+  line-height: 140%;
+}
+
 nav ul li a {
   color: rgba(255, 110, 0, 1.0);
   text-decoration: none;
-}
-
-/* Color blocks */
-.colorblock {
-  color: rgb(255, 255, 255);
-  display: inline-block;
-  border-radius: 1.0rem;
-  width: 18.0rem;
-  height: 8.0rem;
-  padding: 2.0rem;
-  margin: 1.0rem;
-  text-align: center;
-  border: 1px solid rgba(30, 35, 35, 0.4);
-}
-
-.colorblock:hover {
-  border-color: rgba(30, 35, 35, 1.0);
-  transition: border 0.4s ease-in-out;
-}
-
-.colorblock span {
-  font-size: 1.0rem;
-}
-
-.colorgrey {
-  background-color: rgba(255, 255, 254, 1.0);
-  color: rgba(30, 35, 35, 1.0);
-}
-
-.colordark {
-  background-color: rgba(30, 35, 35, 1.0);
-}
-
-.colorwhite {
-  background-color: rgba(0, 0, 0, 1.0);
-}
-
-.colorsub {
-  background-color: rgba(135, 135, 135, 1.0);
-}
-
-.colororange {
-  background-color: rgba(255, 110, 0, 1.0);
-}
-
-.colorblue {
-  background-color: rgba(50, 169, 247, 1.0);
-}
-
-.colorgreen {
-  background-color: rgba(100, 200, 40, 1.0);
-}
-
-.colornavgrey {
-  background-color: rgba(60, 60, 60, 1.0);
 }
 
 /* Forms */
@@ -454,7 +395,7 @@ input.form-search {
 
 [class^=grid-col-] figure figcaption {
   color: rgba(255, 255, 255, 1.0);
-  background-color: rgba(35, 35, 35, 1.0);
+  background-color: #eacf98;
   padding: 0.2rem;
 }
 
@@ -504,12 +445,12 @@ input.form-search {
     line-height: 0.8rem;
   }
 
-  #content, #game-content {
+  #content{
     padding: 0 5%;
     margin: 0 5%;
   }
 
-  #content img, #game-content img {
+  #content img{
     width: auto;
   }
 
@@ -517,11 +458,6 @@ input.form-search {
   [class^=grid-col-] {
     display:block;
     width: 100%;
-  }
-
-  #game-content .grid-50 {
-  margin: 0;
-  padding: 0;
   }
 }
 
@@ -531,18 +467,9 @@ input.form-search {
     margin: 0;
   }
 
-  #content, #game-content {
+  #content {
     margin: 0;
     padding: 0 7%;
-  }
-
-  #game-content .grid-col-3 {
-    width: 100%;
-  }
-
-  #game-content .grid-col-1 {
-    display: none;
-    width: 0%;
   }
 
   #stylenav #topnav .nav-item {
@@ -588,7 +515,7 @@ input.form-search {
   }
 
 
-  #content, #game-content {
+  #content{
     padding: 0 15% 0 35%;
     margin: -19% 0 0 0;
     font-size: 2.0rem;
