@@ -39,6 +39,9 @@ header img {
   margin: 0 15%;
   border: 0;
 }
+.info{
+  float:right;
+}
 
 .banner {
   width: 60%;
@@ -47,7 +50,7 @@ header img {
 }
 
 img {
-  width: auto;
+  width: 100%;
   height: auto;
   max-width: 100%;
 }
@@ -77,16 +80,17 @@ section h1 {
 section h2 {
   font-size: 1.45rem;
 }
-
-h2s {
-  margin: 2.0rem;
-}
-
 section h3 {
   font-size: 90%;
   font-weight: normal;
   margin-bottom: 0.5em;
 }
+
+  section h5 {
+    font-size: 1.45rem;
+    margin-top:0.09rem;
+    margin-bottom:0.05rem;
+  }
 
 section h1 b, section h2 b, section h3 b {
   font-family: "Verdana", Helvetica, Arial, sans-serif;
@@ -117,7 +121,8 @@ b.archive a{
 }
 
 .grid-col-3 {
-  width: 60%;
+  width: 55%;
+  margin-bottom:3rem;
 }
 
 .grid-col-4 {
@@ -408,9 +413,9 @@ input.form-search {
     color: rgba(255, 110, 0, 1.0);
 }
 
-.grid-50 .products {
+/*.grid-50 .products {
     background-color: rgba(235, 235, 235, 1.0);
-  }
+  }*/
 
   .product-desc {
     padding-left: 4.0rem;
@@ -429,7 +434,7 @@ input.form-search {
 /*============================================================*/
 /*Responsive adjustments*/
 
-@media screen and (max-width: 489px) {
+@media screen and (max-width: 610px) {
 
   body {
     font-size: 0.8rem;
@@ -444,6 +449,14 @@ input.form-search {
     width: 100%;
     line-height: 0.8rem;
   }
+  .info{
+    text-align: center;
+    float:none;
+  }
+  .grid-col-3{
+    margin-top:0.5rem;
+    margin-bottom:0;
+  }
 
   #content{
     padding: 0 5%;
@@ -451,7 +464,7 @@ input.form-search {
   }
 
   #content img{
-    width: auto;
+    width: 100%;
   }
 
 
@@ -461,31 +474,39 @@ input.form-search {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 891px) {
 #stylenav #topnav, #topnav, #cartnav, #footer, header img {
     padding: 0;
     margin: 0;
   }
 
   #content {
-    margin: 0;
-    padding: 0 7%;
+    margin: 0 8%;
+    padding: 0;
   }
 
   #stylenav #topnav .nav-item {
     width: 18%;
   }
+   .grid-col-1 figure{
+    width: 85%;
+  }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 982px) {
   #content {
     margin: 0;
-    padding: 0 9%;
+    padding: 0 2%;
   }
 
   #stylenav #topnav, #topnav, #cartnav, #footer, header img {
     padding: 0;
     margin: 0;
+  }
+    section h5 {
+    font-size: 1.45rem;
+    margin-top:1rem;
+    margin-bottom:0.4rem;
   }
 
 }
