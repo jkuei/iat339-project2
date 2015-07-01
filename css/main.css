@@ -22,6 +22,13 @@ body {
   display: inline-block;
   margin: 1.0rem;
 }
+.eventhead{
+  margin-top:2rem;
+}
+hr{
+  margin-top:2rem;
+   margin-bottom:1rem;
+}
 
 header img.home{
   padding: 0 10%;
