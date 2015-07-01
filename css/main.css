@@ -152,11 +152,11 @@ b.archive a{
 /* Links */
 
 section a {
-  color: rgba(255, 110, 0, 1.0);
+  color: rgba(138, 184, 121, 1.0);
 }
 
 section a:hover, nav ul li a:hover {
-  color: rgba(30, 35, 35, 1.0);
+  color: rgba(60, 181, 16, 1.0);
   transition: color 0.2s ease-in-out;
 }
 
@@ -185,7 +185,10 @@ text-decoration: none;
 }
 
 a.submit {
-  background-color: rgba(76, 216, 90, 1.0);
+
+  background-color: rgba(84, 50, 15, 1.0);
+  /*background-color: rgba(50, 169, 247, 1.0);*/
+
   margin:0.5rem;
 }
 .form-default { 
@@ -204,7 +207,7 @@ transition: border .25s linear,color .25s linear,background-color .25s linear;
 } 
 
 .form-default:focus { 
-border-color: #27AE60;
+border-color: #54320F;
 outline: 0;
 box-shadow: none;
 }
@@ -215,7 +218,7 @@ a.submit:hover, a.submit2:hover {
 }
 
 a.cancel {
-  color: rgba(135, 135, 135, 1.0);
+  color: rgba(84, 50, 15, 1.0);
   background-color: transparent;
 }
 
@@ -224,7 +227,7 @@ a.cancel:hover {
 }
 
 a.submit2 {
-  background-color: rgba(76, 216, 90, 1.0);
+  background-color: rgba(84, 50, 15, 1.0);
   margin:0.5rem;
 }
 
@@ -311,7 +314,7 @@ a.remove:hover {
 }
 
 #topnav div.selected a {
-  color: rgb(255,110,0);
+  color: rgb(102,66,30);
 } 
 
 #topnav a, #cartnav a, #cartnav .nav-item {
@@ -321,7 +324,7 @@ a.remove:hover {
 }
 
 #topnav a:hover, #cartnav a:hover {
-  color: rgba(255, 110, 0, 1.0);
+  color: rgba(150, 102, 53, 1.0);
 }
 .button-link { 
 text-align: center;
@@ -394,7 +397,7 @@ input.form-search {
 /* merch test */
 
 [class^=grid-col-] figure{
-  background-color: rgba(255, 0, 0, 0.7);
+  background-color: rgba(204, 157, 106, 0.7);
   text-align: center;
 }
 
