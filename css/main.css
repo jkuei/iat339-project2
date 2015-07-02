@@ -159,7 +159,7 @@ b.archive a{
 /* Links */
 
 section a {
-  color: rgba(138, 184, 121, 1.0);
+  color: rgba(242, 180, 7, 1.0);
 }
 
 section a:hover, nav ul li a:hover {
@@ -183,7 +183,6 @@ font-size: 16px;
 line-height: 24px;
 border-radius: 6px;
 color: #fff;
-background-color: #ffc0cb;
 -webkit-transition: border .25s linear,color .25s linear,background-color .25s linear;
 transition: border .25s linear,color .25s linear,background-color .25s linear;
 -webkit-font-smoothing: subpixel-antialiased;
@@ -241,11 +240,11 @@ a.submit2 {
 }
 
 a.remove {
-  background-color: rgba(200, 40, 40, 0.4);
+  background-color: rgba(247, 214, 124, 1.0);
 }
 
 a.remove:hover {
-  background-color: rgba(0, 0, 0, 1.0);
+  background-color: rgba(242, 180, 7, 1.0);
   color: rgba(200, 40, 40, 1.0);
 }
 
