@@ -159,11 +159,11 @@ b.archive a{
 /* Links */
 
 section a {
-  color: rgba(242, 180, 7, 1.0);
+  color: rgba(138, 184, 121, 1.0);
 }
 
 section a:hover, nav ul li a:hover {
-  color: rgba(150, 102, 53, 1.0);
+  color: rgba(60, 181, 16, 1.0);
   transition: color 0.2s ease-in-out;
 }
 
@@ -199,7 +199,9 @@ a.submit {
   margin:0.5rem;
 }
 .form-default { 
-   display: inline-block;
+margin-left: 0.5rem;
+margin-right: 0.5rem;
+display: inline-block;
 height: 42px;
 padding: 8px 12px;
 font-family: "Verdana", Helvetica, Arial, sans-serif;
@@ -239,12 +241,12 @@ a.submit2 {
 }
 
 a.remove {
-  background-color: rgba(247, 214, 124, 1.0);
+  background-color: rgba(200, 40, 40, 0.4);
 }
 
 a.remove:hover {
-  background-color: rgba(242, 180, 7, 1.0);
-  color: rgba(255, 255, 255, 1.0);
+  background-color: rgba(0, 0, 0, 1.0);
+  color: rgba(200, 40, 40, 1.0);
 }
 
 /* Navigation */
@@ -311,7 +313,7 @@ a.remove:hover {
 }
 
 #topnav .nav-item:hover, #cartnav .nav-item:hover {
-  color: rgba(150, 102, 30, 1.0);
+  color: rgba(255, 110, 0, 1.0);
 }
 
 #guide-nav ul {
@@ -353,25 +355,6 @@ color: #fff;
 background-color: #f6dbd5;
 border-color: #f6dbd5;
 } 
-.form-default { 
-height: 42px;
-padding: 8px 12px;
-font-family: "Verdana", Helvetica, Arial, sans-serif;
-font-size: 15px;
-line-height: 1.467;
-color: #7F8C8D;
-border: 2px solid #7F8C8D;
-border-radius: 6px;
-box-shadow: none;
--webkit-transition: border .25s linear,color .25s linear,background-color .25s linear;
-transition: border .25s linear,color .25s linear,background-color .25s linear;
-} 
-
-.form-default:focus { 
-border-color: #F2B407;
-outline: 0;
-box-shadow: none;
-}
 
 .thankyou{
   text-align: center;
@@ -420,7 +403,7 @@ input.form-search {
 }
 
 [class^=grid-col-] figure figcaption a:hover{
-    color: rgba(150, 102, 30, 1.0);
+    color: rgba(255, 110, 0, 1.0);
 }
 
 /*.grid-50 .products {
@@ -429,6 +412,7 @@ input.form-search {
 
   .product-desc {
     padding-left: 4.0rem;
+    /*margin-top: 2rem;*/
   }
 
 /*checkout cart*/
@@ -443,7 +427,7 @@ input.form-search {
 /*============================================================*/
 /*Responsive adjustments*/
 
-@media screen and (max-width: 610px) {
+@media screen and (max-width: 680px) {
 
   body {
     font-size: 0.8rem;
@@ -480,6 +464,7 @@ input.form-search {
   [class^=grid-col-] {
     display:block;
     width: 100%;
+    text-align: center;
   }
 }
 
