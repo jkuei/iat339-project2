@@ -68,10 +68,10 @@ img {
   max-width: 100%;
 }
 
-p.Oswald-pre {
+/*p.Oswald-pre {
   font-family: 'Oswald', sans-serif;
   font-size: 1.2rem;
-}
+}*/
 
 ul {
   list-style: none;
@@ -149,6 +149,7 @@ b.archive a{
 [class^=grid-col-] {
   display: inline-block;
   float:left;
+  padding:0.5rem;
 }
 
 [class^=grid-col-] p {
